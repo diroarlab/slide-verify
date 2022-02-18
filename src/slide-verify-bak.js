@@ -195,9 +195,9 @@ export default class SlideVerify {
   constructor({ elementId, onSuccess, onFail, onRefresh, lang, photo, source }) {
     let intlText = {};
     if (lang && lang === 'en') {
-      intlText = { slideTips: 'slide to right' };
+      intlText = { slideTips: 'Slide to complete the puzzle' };
     } else {
-      intlText = { slideTips: 'Trượt sang phải' };
+      intlText = { slideTips: 'Trượt sang phải để khớp' };
     }
     let conEl = document.getElementById(elementId);
     conEl.innerHTML = Verify({ slideTips: intlText.slideTips });
